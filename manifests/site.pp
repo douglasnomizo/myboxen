@@ -56,8 +56,6 @@ node default {
   include osx::global::expand_print_dialog
   include osx::global::expand_save_dialog
   include osx::global::tap_to_click
-  class { 'osx::global::key_repeat_rate': rate => 0.6 }
-  class { 'osx::global::key_repeat_delay': delay => 1.5 }
   include osx::dock::autohide
   include osx::dock::icon_size
   include osx::finder::show_all_on_desktop
